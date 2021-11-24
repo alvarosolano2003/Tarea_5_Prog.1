@@ -24,5 +24,20 @@ namespace Infraestructure.Repositories
         {
             return Math.Round(monto * (tasa + 1) / terminos);
         }
+
+        public List<CalendarioPrestamo> GetBy(Predicate<CalendarioPrestamo> predicate)
+        {
+            return data.FindAll(predicate);
+        }
+
+        public int GetLastIndex()
+        {
+            if (data.Count == 0)
+            {
+                return 1;
+            }
+
+            return data.Count;
+        }
     }
 }

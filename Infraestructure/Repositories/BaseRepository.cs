@@ -45,17 +45,6 @@ namespace Infraestructure.Repositories
             return data.ToArray();
         }
 
-        public int GetLastIndex()
-        {
-            if (data == null)
-            {
-                throw new ArgumentException("No se han agregado datos aun.");
-            }
-
-            //Se hara despues el metodo, todavia no estan los datos necesarios
-            throw new NotImplementedException();
-        }
-
         public void Update(int index, T t)
         {
             if (index > 1 || t == null)

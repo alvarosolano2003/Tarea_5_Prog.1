@@ -12,5 +12,7 @@ namespace Domain.Interfaces
         decimal CalculatePrincipal(decimal monto, decimal tasa, decimal terminos);
         decimal CalculateInteres(decimal monto, decimal tasa, decimal terminos);
         decimal CalculateCuota(decimal principal, decimal inters);
+        int GetLastIndex();
+        List<CalendarioPrestamo> GetBy(Predicate<CalendarioPrestamo> predicate);
     }
 }

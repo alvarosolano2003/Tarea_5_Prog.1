@@ -12,6 +12,5 @@ namespace Domain.Interfaces
         T[] GetAll();
         void Update(int index, T t2);
         void Delete(T t);
-        int GetLastIndex();
     }
 }
