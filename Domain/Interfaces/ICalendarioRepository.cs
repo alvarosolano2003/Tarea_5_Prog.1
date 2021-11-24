@@ -7,8 +7,10 @@ using System.Threading.Tasks;
 
 namespace Domain.Interfaces
 {
-    public interface ICalendarioRepository:IModel<CalendarioPrestamo>
+    public interface ICalendarioRepository : IModel<CalendarioPrestamo>
     {
-
+        decimal CalculatePrincipal(decimal monto, decimal tasa, decimal terminos);
+        decimal CalculateInteres(decimal monto, decimal tasa, decimal terminos);
+        decimal CalculateCuota(decimal principal, decimal inters);
     }
 }

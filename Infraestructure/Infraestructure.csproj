@@ -68,6 +68,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\BaseRepository.cs" />
+    <Compile Include="Repositories\CalendarioRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
